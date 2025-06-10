@@ -3,7 +3,7 @@ Description: Interactive dashboard for exploring CDC vaccination coverage
               data among pregnant women. Includes plots, summary tables, 
               time trends, and interactive mapping by geography and demographic.
  
- Required Packages: shiny, tidyverse, janitor, readr, DT, ggplot2, maps, sf, 
+ Required Packages: shiny, tidyverse, janitor, readr, DT, ggplot2, sf, 
                     tigris, leaflet
 
 
