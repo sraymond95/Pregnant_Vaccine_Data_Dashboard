@@ -102,7 +102,7 @@ ui <- fluidPage(
     )
 )
 ```
-Step 5. Server
+Step 5. This will generate the dropdown menu depending on what is selected
 ```
 server <- function(input, output, session) {
     
@@ -136,7 +136,7 @@ Step 6. This section allows us to create our filters based on the sidebar inputs
         df
     })
 ```
-Step 7 Bar Plot - Vaccine Coverage by geography    
+Step 7. Bar Plot - Vaccine Coverage by geography    
 ```
     output$coverage_plot <- renderPlot({
         req(filtered_data())
@@ -152,7 +152,7 @@ Step 7 Bar Plot - Vaccine Coverage by geography
             theme_minimal()
     })
 ```
-Step 8 Summary Table will display a sortable, scrollable data table with geography, vaccine coverage %, and sample size  
+Step 8. Summary Table will display a sortable, scrollable data table with geography, vaccine coverage %, and sample size  
 ```
     output$summary_table <- renderDT({
         datatable(
@@ -185,7 +185,7 @@ Step 9. Tab to download panel
         }
     )
 ```
-Step 10 Time Trend Plot  to show vaccine coverage over time
+Step 10. Time Trend Plot  to show vaccine coverage over time
 ```
     output$time_trend_plot <- renderPlot({
         vax %>%
@@ -206,7 +206,7 @@ Step 10 Time Trend Plot  to show vaccine coverage over time
             theme_minimal()
     })
 ```
-Step 11Regular Map    
+Step 11. Regular Map    
  ```   
     output$coverage_map <- renderPlot({
         map_data <- vax %>%
